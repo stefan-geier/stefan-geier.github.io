@@ -1,7 +1,5 @@
 // Variables //
 
-// breakpoints //
-
 $breakpoint-xs: 500px;
 $breakpoint-sm: 576px;
 $breakpoint-md: 768px;
@@ -10,10 +8,12 @@ $breakpoint-xl: 1200px;
 
 $color_1: white;
 
+// Imports //
+
 // CSS //
 body {
     font-family: museo-sans, sans-serif;
-    animation: theme 21s linear infinite;
+    animation: theme 120s linear infinite;
     
     &:after,
     &:before {
@@ -27,7 +27,7 @@ body {
         width: 100vmax;
         height: 100vmax;
         background: rgba(0,0,0,0.1);
-        animation: background 200s linear infinite;
+        animation: background 400s linear infinite;
     }
 
     &:after {
@@ -92,7 +92,8 @@ body {
     }
 }
 
-div {
+div.container {
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -126,13 +127,30 @@ img {
     height: 200px;
 }
 
+.links {
+    width: 260px;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+p {
+    font-size: 25px;
+    font-weight: 200;
+    color: $color_1;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
 a {
     position: relative;
     text-decoration: none;
     color: $color_1;
     font-size: 25px;
-    font-weight: 200;
+    font-weight: 400;
   }
+  
 a:before {
     content: "";
     position: absolute;
@@ -152,19 +170,16 @@ a:hover:before {
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
 }
-
-@media only screen and (max-width: $breakpoint-xs) {
+@media only screen and (max-width: $breakpoint-sm) {
     h1 {
         font-weight: 200;
         font-size: 55px;
-        color: $color_1;
         margin-top: 60px;
     }
     
     h2 {
         font-weight: 200;
         font-size: 30px;
-        color: $color_1;
         margin-top: 5vh;
         margin-bottom: -50px;
     }
@@ -175,11 +190,11 @@ a:hover:before {
     }
 
     a {
-        position: relative;
-        text-decoration: none;
-        color: $color_1;
         font-size: 22px;
-        font-weight: 200;
       }
+
+    p {
+        font-size: 22px;
+    }
 }
 

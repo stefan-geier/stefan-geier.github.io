@@ -1,7 +1,7 @@
 body {
   font-family: museo-sans, sans-serif;
-  -webkit-animation: theme 21s linear infinite;
-          animation: theme 21s linear infinite;
+  -webkit-animation: theme 120s linear infinite;
+          animation: theme 120s linear infinite;
 }
 
 body:after, body:before {
@@ -15,8 +15,8 @@ body:after, body:before {
   width: 100vmax;
   height: 100vmax;
   background: rgba(0, 0, 0, 0.1);
-  -webkit-animation: background 200s linear infinite;
-          animation: background 200s linear infinite;
+  -webkit-animation: background 400s linear infinite;
+          animation: background 400s linear infinite;
 }
 
 body:after {
@@ -118,7 +118,8 @@ body:before {
   }
 }
 
-div {
+div.container {
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -161,12 +162,35 @@ img {
   height: 200px;
 }
 
+.links {
+  width: 260px;
+  margin-top: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+p {
+  font-size: 25px;
+  font-weight: 200;
+  color: white;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
 a {
   position: relative;
   text-decoration: none;
   color: white;
   font-size: 25px;
-  font-weight: 200;
+  font-weight: 400;
 }
 
 a:before {
@@ -191,17 +215,15 @@ a:hover:before {
   transform: scaleX(1);
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 576px) {
   h1 {
     font-weight: 200;
     font-size: 55px;
-    color: white;
     margin-top: 60px;
   }
   h2 {
     font-weight: 200;
     font-size: 30px;
-    color: white;
     margin-top: 5vh;
     margin-bottom: -50px;
   }
@@ -211,11 +233,10 @@ a:hover:before {
     margin-bottom: 40px;
   }
   a {
-    position: relative;
-    text-decoration: none;
-    color: white;
     font-size: 22px;
-    font-weight: 200;
+  }
+  p {
+    font-size: 22px;
   }
 }
 /*# sourceMappingURL=style.css.map */
