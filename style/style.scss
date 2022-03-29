@@ -6,13 +6,18 @@ $breakpoint-md: 768px;
 $breakpoint-lg: 992px;
 $breakpoint-xl: 1200px;
 
+// Colors //
+
 $color_1: white;
+$color_2: rgb(255, 174, 0);
+$bg-color: rgb(31, 31, 31);
 
 // Imports //
 
 // CSS //
 body {
     font-family: museo-sans, sans-serif;
+    background-color: $bg-color;
     animation: theme 120s linear infinite;
     
     &:after,
@@ -27,7 +32,7 @@ body {
         width: 100vmax;
         height: 100vmax;
         background: rgba(0,0,0,0.1);
-        animation: background 400s linear infinite;
+        animation: background 200s linear infinite;
     }
 
     &:after {
@@ -43,43 +48,12 @@ body {
 
 @keyframes theme {
     0% {
-        background: #80AAC8;
+        background: $bg-color;
     }
-    
-    11% {
-        background: #4287B8;
-    }
-    
-    22% {
-        background: #1678BD;
-    }
-    
-    33% {
-        background: #0660A0;
-    }
-    
-    44% {
-        background: #034C81;
-    }  
-    55% {
-        background: #034C81;
-    }
-    
-    66% {
-        background: #0660A0;
-    }
-    
-    77% {
-        background: #1678BD;
-    }
-    
-    88% {
-        background: #4287B8;
-    }
-    
+
     100% {
-        background: #80AAC8;
-    }  
+        background: $bg-color;
+    }
 }
 
 @keyframes background {
@@ -118,6 +92,7 @@ hr {
     margin-top: -60px;
     width: 50vw;
     margin-bottom: 40px;
+    border-color: $color_2;
 }
 
 img {
@@ -125,6 +100,8 @@ img {
     border-radius: 50%;
     width: 200px;
     height: 200px;
+    border-style: solid;
+    border-color: $color_2;
 }
 
 .links {
@@ -148,7 +125,7 @@ a {
     text-decoration: none;
     color: $color_1;
     font-size: 25px;
-    font-weight: 400;
+    font-weight: 200;
   }
   
 a:before {
@@ -164,11 +141,13 @@ a:before {
     transform: scaleX(0);
     -webkit-transition: all 0.3s ease-in-out 0s;
     transition: all 0.4s ease-in-out 0s;
+    background: $color_2;
 }
 a:hover:before {
     visibility: visible;
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
+    background: $color_2;
 }
 @media only screen and (max-width: $breakpoint-sm) {
     h1 {
