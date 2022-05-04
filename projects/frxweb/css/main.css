@@ -1034,7 +1034,7 @@ video:focus {
 
 .our-boxes-wrapper {
     display: grid;
-    grid-template-columns: 1px repeat(3, auto) 1px;
+    grid-template-columns: 1px repeat(4, auto) 1px;
     grid-gap: 16px;
     overflow-x: auto;
     padding-bottom: 10px;
@@ -2557,7 +2557,7 @@ button {
     /*OUR BOXES*/
     /*===============*/
     .our-boxes-wrapper {
-        grid-template-columns: repeat(3, auto);
+        grid-template-columns: repeat(4, auto);
         grid-gap: 16px;
         overflow-x: visible;
         margin: 0;
