@@ -1,10 +1,18 @@
 header {
+
+    h2 {
+        color: $color_2;
+        font-weight: 200;
+    }
+
     img {
         border-radius: 50%;
         width: 200px;
         height: 200px;
         border-style: solid;
         border-color: $color_1;
+        margin-top: 60px;
+        margin-bottom: 50px;
     }
 
     hr {
@@ -18,18 +26,13 @@ header {
     }
 
     .header-h1-spacing {
-        margin-top: 40px;
+        margin-top: 20px;
     }
     
     /*
     .header-h2-spacing {
-    
+
     }
     */
-    
-    .header-img-spacing {
-        margin-top: 100px;
-        margin-bottom: 50px;
-    }
 }
 

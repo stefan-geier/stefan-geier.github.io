@@ -1,9 +1,14 @@
 header {
   /*
     .header-h2-spacing {
-    
+
     }
     */
+}
+
+header h2 {
+  color: white;
+  font-weight: 200;
 }
 
 header img {
@@ -12,6 +17,8 @@ header img {
   height: 200px;
   border-style: solid;
   border-color: #ffae00;
+  margin-top: 60px;
+  margin-bottom: 50px;
 }
 
 header hr {
@@ -25,12 +32,7 @@ header a {
 }
 
 header .header-h1-spacing {
-  margin-top: 40px;
-}
-
-header .header-img-spacing {
-  margin-top: 100px;
-  margin-bottom: 50px;
+  margin-top: 20px;
 }
 
 * {
@@ -135,9 +137,16 @@ h1 {
 }
 
 h2 {
-  font-weight: 200;
+  font-weight: 400;
   font-size: 40px;
-  color: white;
+  color: black;
+  text-align: center;
+}
+
+h3 {
+  font-weight: 300;
+  font-size: 35px;
+  color: black;
 }
 
 p {
@@ -153,6 +162,7 @@ a {
   color: white;
   font-size: 25px;
   font-weight: 200;
+  cursor: pointer;
 }
 
 a.link_hover:before {
@@ -177,5 +187,78 @@ a.link_hover:hover:before {
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
   background: #ffae00;
+}
+
+.index-h2-spacing {
+  padding-top: 70px;
+}
+
+.portfolio {
+  margin-top: 150px;
+  background-color: white;
+  padding-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.portfolio h2 {
+  margin-bottom: 90px;
+}
+
+.portfolio .portfolio-block {
+  width: 900px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.portfolio .portfolio-block .portfolio-box {
+  border: 2px solid #ffae00;
+  width: 400px;
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 80px;
+}
+
+.portfolio .portfolio-block .portfolio-box img {
+  margin-top: 20px;
+  height: 85px;
+}
+
+.portfolio .portfolio-block .portfolio-box .link {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.portfolio .portfolio-contact {
+  color: black;
+  font-weight: 400;
+  margin-top: 10px;
 }
 /*# sourceMappingURL=style.css.map */
