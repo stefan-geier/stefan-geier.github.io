@@ -1,20 +1,15 @@
-// Variables //
-
-$breakpoint-xs: 500px;
-$breakpoint-sm: 576px;
-$breakpoint-md: 768px;
-$breakpoint-lg: 992px;
-$breakpoint-xl: 1200px;
-
-// Colors //
-
-$color_1: white;
-$color_2: rgb(255, 174, 0);
-$bg-color: rgb(31, 31, 31);
-
 // Imports //
 
+@import '_variables';
+@import '_header';
+
 // CSS //
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: museo-sans, sans-serif;
     background-color: $bg-color;
@@ -66,7 +61,7 @@ body {
     }
 }
 
-div.container {
+.container {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -77,58 +72,31 @@ div.container {
 h1 {
     font-weight: 200;
     font-size: 100px;
-    color: $color_1;
+    color: $color_2;
 }
 
 h2 {
     font-weight: 200;
     font-size: 40px;
-    color: $color_1;
-    margin-top: 5vh;
-    margin-bottom: -50px;
-}
-
-hr {
-    margin-top: -60px;
-    width: 50vw;
-    margin-bottom: 40px;
-    border-color: $color_2;
-}
-
-img {
-    margin-top: 15vh;
-    border-radius: 50%;
-    width: 200px;
-    height: 200px;
-    border-style: solid;
-    border-color: $color_2;
-}
-
-.links {
-    width: 260px;
-    margin-top: 80px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    color: $color_2;
 }
 
 p {
     font-size: 25px;
     font-weight: 200;
-    color: $color_1;
-    margin-bottom: 0px;
+    color: $color_2;
     text-align: center;
 }
 
 a {
     position: relative;
     text-decoration: none;
-    color: $color_1;
+    color: $color_2;
     font-size: 25px;
     font-weight: 200;
-  }
+}
   
-a:before {
+a.link_hover:before {
     content: "";
     position: absolute;
     width: 100%;
@@ -141,39 +109,12 @@ a:before {
     transform: scaleX(0);
     -webkit-transition: all 0.3s ease-in-out 0s;
     transition: all 0.4s ease-in-out 0s;
-    background: $color_2;
+    background: $color_1;
 }
-a:hover:before {
+a.link_hover:hover:before {
     visibility: visible;
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
-    background: $color_2;
-}
-@media only screen and (max-width: $breakpoint-sm) {
-    h1 {
-        font-weight: 200;
-        font-size: 55px;
-        margin-top: 60px;
-    }
-    
-    h2 {
-        font-weight: 200;
-        font-size: 30px;
-        margin-top: 5vh;
-        margin-bottom: -50px;
-    }
-    hr {
-        margin-top: -20px;
-        width: 90vw;
-        margin-bottom: 40px;
-    }
-
-    a {
-        font-size: 22px;
-      }
-
-    p {
-        font-size: 22px;
-    }
+    background: $color_1;
 }
 

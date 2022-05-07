@@ -1,0 +1,35 @@
+header {
+    img {
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+        border-style: solid;
+        border-color: $color_1;
+    }
+
+    hr {
+        width: 50vw;
+        margin: 40px;
+        border-color: $color_1;
+    }
+
+    a {
+        margin: 10px;
+    }
+
+    .header-h1-spacing {
+        margin-top: 40px;
+    }
+    
+    /*
+    .header-h2-spacing {
+    
+    }
+    */
+    
+    .header-img-spacing {
+        margin-top: 100px;
+        margin-bottom: 50px;
+    }
+}
+
