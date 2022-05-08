@@ -35,6 +35,21 @@ header .header-h1-spacing {
   margin-top: 20px;
 }
 
+footer {
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+footer a {
+  margin-bottom: 10px;
+}
+
+footer hr {
+  width: 50vw;
+  margin: 10px;
+  border-color: #ffae00;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -154,6 +169,7 @@ p {
   font-weight: 200;
   color: white;
   text-align: center;
+  letter-spacing: 1.5px;
 }
 
 a {
@@ -163,6 +179,7 @@ a {
   font-size: 25px;
   font-weight: 200;
   cursor: pointer;
+  letter-spacing: 1.5px;
 }
 
 a.link_hover:before {
@@ -218,8 +235,9 @@ a.link_hover:hover:before {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .portfolio .portfolio-block .portfolio-box {
@@ -239,7 +257,7 @@ a.link_hover:hover:before {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 80px;
+  margin-bottom: 70px;
 }
 
 .portfolio .portfolio-block .portfolio-box img {
@@ -260,5 +278,24 @@ a.link_hover:hover:before {
   color: black;
   font-weight: 400;
   margin-top: 10px;
+}
+
+.impressum {
+  width: 800px;
+}
+
+.impressum h2 {
+  color: white;
+  margin-top: 80px;
+  margin-bottom: 60px;
+}
+
+.impressum a {
+  margin-top: 20px;
+}
+
+.impressum .copyright {
+  font-size: 18px;
+  margin-top: 20px;
 }
 /*# sourceMappingURL=style.css.map */
