@@ -280,11 +280,34 @@ a.link_hover:hover:before {
         h2 {
             color: $color_2;
             margin-top: 80px;
-            margin-bottom: 60px;
+            margin-bottom: 30px;
         }
     
-        a {
+        a.impressum {
+            margin-bottom: 40px;
+            text-decoration: underline;
+            text-align: center;
+        }
+    
+        .copyright {
+            font-size: 18px;
             margin-top: 20px;
+        }
+    }
+
+    .privacy {
+
+        width: 90%;
+    
+        a.privacy {
+            margin-bottom: 40px;
+            text-decoration: underline;
+            text-align: center;
+        }
+    
+        p {
+            text-align: left;
+            font-size: 16px;
         }
     
         .copyright {

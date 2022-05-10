@@ -383,12 +383,30 @@ a.link_hover:hover:before {
   .impressum h2 {
     color: white;
     margin-top: 80px;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
   }
-  .impressum a {
-    margin-top: 20px;
+  .impressum a.impressum {
+    margin-bottom: 40px;
+    text-decoration: underline;
+    text-align: center;
   }
   .impressum .copyright {
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  .privacy {
+    width: 90%;
+  }
+  .privacy a.privacy {
+    margin-bottom: 40px;
+    text-decoration: underline;
+    text-align: center;
+  }
+  .privacy p {
+    text-align: left;
+    font-size: 16px;
+  }
+  .privacy .copyright {
     font-size: 18px;
     margin-top: 20px;
   }
