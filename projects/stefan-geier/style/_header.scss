@@ -1,0 +1,43 @@
+header {
+
+    h2 {
+        color: $color_2;
+        font-weight: 200;
+    }
+
+    img {
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+        border-style: solid;
+        border-color: $color_1;
+        margin-top: 60px;
+        margin-bottom: 50px;
+    }
+
+    hr {
+        width: 50vw;
+        margin: 40px;
+        border-color: $color_1;
+    }
+
+    a {
+        margin: 10px;
+    }
+
+    .header-h1-spacing {
+        margin-top: 20px;
+    }
+    
+    /*
+    .header-h2-spacing {
+
+    }
+    */
+}
+
+// Mobile //
+@media only screen and (max-width: $breakpoint-xs) {
+
+
+}
