@@ -31,6 +31,13 @@ p {
     color: black;
 }
 
+.hover-p {
+    font-family: $font-family-text;
+    font-weight: 400;
+    font-size: 20px;
+    color: black;
+}
+
 //----------------- About -----------------//
 
 .about {
@@ -53,6 +60,10 @@ img.vector {
 
 div.quote {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/img/aniket-deole-qXUmugrZ41c-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
     height: 800px;
     display: flex;
     flex-direction: column;
@@ -110,7 +121,7 @@ div.quote {
             left: 0;
             width: 100%;
             height: 100%;
-            border-radius: 15px;
+            border-radius: 12px;
             background-color: $white;
             display: flex;
             flex-direction: column;
@@ -189,6 +200,20 @@ div.quote {
         h2 {
             font-size: 32px;
         }
+    }
+
+    h4 {
+        font-family: $font-family-header;
+        font-weight: 400;
+        font-size: 22px;
+        color: $main-color;
+    }
+    
+    .hover-p {
+        font-family: $font-family-text;
+        font-weight: 400;
+        font-size: 16px;
+        color: black;
     }
     
     //----------------- Image Vector -----------------//
@@ -285,9 +310,10 @@ div.quote {
                 transition: opacity 0.3s;
 
                 img {
-                    margin-bottom: 30px;
-                    margin-top: 30px;
-                }
+                    width: 120px;
+                    margin-bottom: 15px;
+                    margin-top: 15px;
+                }   
             }
 
             .image_overlay > * {
@@ -319,6 +345,20 @@ div.quote {
         h2 {
             font-size: 32px;
         }
+    }
+
+    h4 {
+        font-family: $font-family-header;
+        font-weight: 400;
+        font-size: 22px;
+        color: $main-color;
+    }
+    
+    .hover-p {
+        font-family: $font-family-text;
+        font-weight: 400;
+        font-size: 16px;
+        color: black;
     }
     
     //----------------- Image Vector -----------------//
@@ -415,8 +455,9 @@ div.quote {
                 transition: opacity 0.3s;
 
                 img {
-                    margin-bottom: 30px;
-                    margin-top: 30px;
+                    width: 120px;
+                    margin-bottom: 15px;
+                    margin-top: 15px;
                 }
             }
 

@@ -306,6 +306,13 @@ p {
   color: black;
 }
 
+.hover-p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: black;
+}
+
 .about {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -328,6 +335,10 @@ img.vector {
 div.quote {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(/img/aniket-deole-qXUmugrZ41c-unsplash.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/img/aniket-deole-qXUmugrZ41c-unsplash.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
   height: 800px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -398,7 +409,7 @@ div.quote em {
   left: 0;
   width: 100%;
   height: 100%;
-  border-radius: 15px;
+  border-radius: 12px;
   background-color: #EDEDED;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -479,6 +490,18 @@ div.quote em {
   }
   .container h2 {
     font-size: 32px;
+  }
+  h4 {
+    font-family: "Expletus Sans", cursive;
+    font-weight: 400;
+    font-size: 22px;
+    color: #25B1DA;
+  }
+  .hover-p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: black;
   }
   img.vector {
     width: 100% !important;
@@ -575,8 +598,9 @@ div.quote em {
     transition: opacity 0.3s;
   }
   .container-work .my-work-box .image_overlay img {
-    margin-bottom: 30px;
-    margin-top: 30px;
+    width: 120px;
+    margin-bottom: 15px;
+    margin-top: 15px;
   }
   .container-work .my-work-box .image_overlay > * {
     -webkit-transform: translateY(20px);
@@ -602,6 +626,18 @@ div.quote em {
   }
   .container h2 {
     font-size: 32px;
+  }
+  h4 {
+    font-family: "Expletus Sans", cursive;
+    font-weight: 400;
+    font-size: 22px;
+    color: #25B1DA;
+  }
+  .hover-p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: black;
   }
   img.vector {
     width: 100% !important;
@@ -699,8 +735,9 @@ div.quote em {
     transition: opacity 0.3s;
   }
   .container-work .my-work-box .image_overlay img {
-    margin-bottom: 30px;
-    margin-top: 30px;
+    width: 120px;
+    margin-bottom: 15px;
+    margin-top: 15px;
   }
   .container-work .my-work-box .image_overlay > * {
     -webkit-transform: translateY(20px);
