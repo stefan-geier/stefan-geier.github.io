@@ -1,5 +1,4 @@
 // Breakpoints //
-
 $breakpoint-xs: 500px;
 $breakpoint-sm: 576px;
 $breakpoint-md: 768px;
@@ -7,7 +6,11 @@ $breakpoint-lg: 992px;
 $breakpoint-xl: 1200px;
 
 // Colors //
+$main-color: #25B1DA;
+$white: #EDEDED;
+$gray: #2E2E2E;
+$bg-color: #2E2E2E;
 
-$color_1: rgb(255, 174, 0);
-$color_2: white;
-$bg-color: rgb(31, 31, 31);
+// Fonts //
+$font-family-header: 'Expletus Sans', cursive;
+$font-family-text: 'Montserrat', sans-serif;
