@@ -59,7 +59,7 @@ img.vector {
 //----------------- Quote -----------------//
 
 div.quote {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/aniket-deole-qXUmugrZ41c-unsplash.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/quote-bg.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -314,6 +314,10 @@ div.quote {
                     margin-bottom: 15px;
                     margin-top: 15px;
                 }   
+
+                .myg-logo-size {
+                    width: 50px;
+                }
             }
 
             .image_overlay > * {

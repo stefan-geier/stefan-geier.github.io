@@ -333,8 +333,8 @@ img.vector {
 }
 
 div.quote {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(img/aniket-deole-qXUmugrZ41c-unsplash.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/aniket-deole-qXUmugrZ41c-unsplash.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(../img/quote-bg.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/quote-bg.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -601,6 +601,9 @@ div.quote em {
     width: 120px;
     margin-bottom: 15px;
     margin-top: 15px;
+  }
+  .container-work .my-work-box .image_overlay .myg-logo-size {
+    width: 50px;
   }
   .container-work .my-work-box .image_overlay > * {
     -webkit-transform: translateY(20px);
