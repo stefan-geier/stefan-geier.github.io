@@ -278,6 +278,19 @@ main div.about img {
   width: 470px;
 }
 
+.privacy {
+  background-color: #2E2E2E;
+}
+
+.privacy h2 {
+  font-family: "Expletus Sans", cursive;
+  font-weight: 400;
+  font-size: 48px;
+  text-transform: uppercase;
+  color: white;
+  margin-top: 30px;
+}
+
 * {
   margin: 0;
   padding: 0;
