@@ -757,7 +757,7 @@ div.quote em {
   }
   img.vector-bottom {
     width: 100vw;
-    margin-bottom: 0px;
+    margin-bottom: -4px;
   }
   .about {
     display: -webkit-box;
