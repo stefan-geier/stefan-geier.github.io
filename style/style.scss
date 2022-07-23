@@ -46,9 +46,8 @@ p {
     flex-direction: row;
 
     .about-me_img {
+        width: 500px !important;
         margin-top: 0px;
-        border-radius: 15px;
-        border: 4px solid $main-color;
     }
 
     div {
@@ -73,8 +72,12 @@ p {
 //----------------- Image Vector -----------------//
 
 img.vector {
-    width: 100%;
-    margin-bottom: -4px;
+    width: 100vw;
+}
+
+img.vector-bottom {
+    width: 100vw;
+    margin-bottom: -6px;
 }
 
 //----------------- Quote -----------------//
@@ -260,8 +263,6 @@ div.quote {
         .about-me_img {
             width: 500px !important;
             margin-top: 20px;
-            border-radius: 15px;
-            border: 4px solid $main-color;
         }
     }
 
@@ -411,8 +412,6 @@ div.quote {
         .about-me_img {
             width: 300px !important;
             margin-top: 20px;
-            border-radius: 15px;
-            border: 4px solid $main-color;
         }
     }
 
