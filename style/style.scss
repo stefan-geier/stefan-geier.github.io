@@ -393,8 +393,12 @@ div.quote {
     //----------------- Image Vector -----------------//
 
     img.vector {
-        width: 100% !important;
-        margin-bottom: -4px;
+        width: 100vw;
+    }
+
+    img.vector-bottom {
+        width: 100vw;
+        margin-bottom: 0px;
     }
 
     //----------------- About -----------------//
