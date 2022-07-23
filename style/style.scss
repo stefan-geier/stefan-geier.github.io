@@ -45,8 +45,28 @@ p {
     display: flex;
     flex-direction: row;
 
-    img {
+    .about-me_img {
         margin-top: 0px;
+        border-radius: 15px;
+        border: 4px solid $main-color;
+    }
+
+    div {
+
+        div {
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+        
+            a {
+                font-family: $font-family-text;
+                text-decoration: none;
+                color: $main-color;
+                font-size: 22px;
+                font-weight: 400;
+                margin-bottom: 5px;
+            }
+        }
     }
 }
 
@@ -60,7 +80,8 @@ img.vector {
 //----------------- Quote -----------------//
 
 div.quote {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/quote-bg.jpg);
+    background-attachment: fixed;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/quote-bg.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -80,6 +101,7 @@ div.quote {
         font-weight: 400;
         font-size: 60px;
         color: white;
+        text-shadow: 1px 1px 6px black;
     }
 
     em {
@@ -235,9 +257,11 @@ div.quote {
             width: 500px;
         }
         
-        img {
+        .about-me_img {
             width: 500px !important;
             margin-top: 20px;
+            border-radius: 15px;
+            border: 4px solid $main-color;
         }
     }
 
@@ -384,9 +408,11 @@ div.quote {
             width: 300px;
         }
         
-        img {
+        .about-me_img {
             width: 300px !important;
             margin-top: 20px;
+            border-radius: 15px;
+            border: 4px solid $main-color;
         }
     }
 
