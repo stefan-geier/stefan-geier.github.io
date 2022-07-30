@@ -1,0 +1,22 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 2000">
+    <defs>
+        <style>
+            .cls-1 {
+                fill: none;
+                stroke: #add24d;
+                stroke-linecap: round;
+                stroke-miterlimit: 10;
+                stroke-width: 60px;
+            }
+
+        </style>
+    </defs>
+    <g id="Delivery">
+        <path id="Path_1666" data-name="Path 1666" class="cls-1" d="M529.82,1113.29H331.4A92.37,92.37,0,0,1,239,1020.92V558.26a92.4,92.4,0,0,1,92.36-92.41h745.73a92.4,92.4,0,0,1,92.37,92.37V735.44" />
+        <path id="Path_1667" data-name="Path 1667" class="cls-1" d="M456.31,1312.57h-52a56.42,56.42,0,0,1-56.42-56.43h0v-86a56.42,56.42,0,0,1,56.42-56.38h666.81a99.41,99.41,0,0,0,99.41-99.41h0V693.25a55.35,55.35,0,0,1,55.35-55.36h211.62a98.09,98.09,0,0,1,76.2,33.33,1725.2,1725.2,0,0,1,122.57,214.43A219.38,219.38,0,0,1,1655.37,977V1256.3a56.43,56.43,0,0,1-56.42,56.43h-40.69" />
+        <line id="Line_589" data-name="Line 589" class="cls-1" x1="1273.02" y1="1312.57" x2="723.6" y2="1312.57" />
+        <circle id="Ellipse_1" data-name="Ellipse 1" class="cls-1" cx="589.48" cy="1381.96" r="151" />
+        <circle id="Ellipse_2" data-name="Ellipse 2" class="cls-1" cx="1407.18" cy="1381.96" r="151" />
+        <path id="Path_1668" data-name="Path 1668" class="cls-1" d="M1458.46,992.17H1340.67a52,52,0,0,1-52-51.95h0V807a52,52,0,0,1,52-51.95h44.68A52,52,0,0,1,1430.86,782l73.19,133.17a51.95,51.95,0,0,1-45.59,77Z" />
+    </g>
+</svg>
