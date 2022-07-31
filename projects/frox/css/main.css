@@ -3685,7 +3685,7 @@ button {
 
 .box-new-price-green {
     font-size: 70px;
-    color: #7db61c;
+    color: #7db642;
 }
 
 h3.landingpage {
@@ -3713,7 +3713,7 @@ h3.landingpage {
 }
 
 .box-with-products-flying {
-    margin-top: 100px;
+    margin-top: 80px;
     max-width: 425px;
     width: 100%;
     height: auto;
@@ -3731,14 +3731,6 @@ a.landing-page-button {
     width: 85%;
     height: auto;
 }
-
-.button-text {
-    font-size: 36px;
-    position: absolute;
-    top: 390px;
-    color: white;
-}
-
     /* Light-BG */
 
 .landingpage-light {
@@ -3749,23 +3741,16 @@ h2.landingpage-light {
     margin-left: 20px;
 }
 
-h4.landingpage-light {
-    font-family: 'CocogooseCompressed', sans-serif;
-    font-size: 25px;
-    font-weight: 400;
-    margin: 0;
-}
-
 .button-landingpage-center {
     display: flex;
     justify-content: center;
 }
 
 .button-landingpage {
-    background-color: #7db61c;
+    background-color: #7db642;
     border-radius: 12px;
     Padding: 14px 16px;
-    box-shadow: 3px 3px 10px #7db61c;
+    box-shadow: 3px 3px 10px #7db642;
     display: inline-block;
     margin-top: 15px;
 }
@@ -3845,13 +3830,6 @@ h4.landingpage-light {
         width: 85%;
         height: auto;
     }
-
-    .button-text {
-        font-size: 30px;
-        position: absolute;
-        top: 380px;
-        color: white;
-    }
 }
 
 @media only screen and (max-width: 360px) {
@@ -3860,12 +3838,5 @@ h4.landingpage-light {
         max-width: 425px;
         width: 85%;
         height: auto;
-    }
-
-    .button-text {
-        font-size: 26px;
-        position: absolute;
-        top: 365px;
-        color: white;
     }
 }
