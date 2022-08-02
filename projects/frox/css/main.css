@@ -3690,7 +3690,22 @@ button {
 
 h3.landingpage {
     text-align: center;
-    margin-bottom: -20px;
+    margin-top: -40px;
+}
+
+.landingpage-text-top {
+    padding-top: 30px;
+    text-align: center;
+}
+
+.neukunden {
+    font-size: 10px;
+}
+
+@media screen and (min-width: 300px) and (max-width: 500px) {
+    .neukunden  {
+        padding-left: 70vw; /* Corresponds to 10% of the viewport width */
+    }
 }
 
 .page-background-landingpage{
@@ -3778,7 +3793,7 @@ h2.landingpage-light {
 }
 
 .how-it-works-h3 {
-    width: 280px;
+    width: 260px;
     margin-top: 10px;
     margin-bottom: 20px;
 }
