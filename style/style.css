@@ -73,7 +73,7 @@ header hr {
   width: 100%;
 }
 
-header a {
+header a.link {
   font-family: "Montserrat", sans-serif;
   text-decoration: none;
   color: white;
@@ -83,7 +83,7 @@ header a {
   text-shadow: 1px 1px 6px black;
 }
 
-header a:after {
+header a.link:after {
   display: block;
   content: "";
   height: 2px;
@@ -93,7 +93,7 @@ header a:after {
   transition: 0.4s;
 }
 
-header a:hover:after {
+header a.link:hover:after {
   width: 100%;
 }
 
@@ -125,7 +125,7 @@ header a:hover:after {
   header hr {
     width: 80%;
   }
-  header a {
+  header a.link {
     font-size: 22px;
   }
 }
@@ -199,7 +199,7 @@ footer div hr {
   width: 100%;
 }
 
-footer a.button {
+footer a.button-footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -313,7 +313,7 @@ main div.about img {
 }
 
 .privacy {
-  background-color: #2E2E2E;
+  background-color: #fff;
 }
 
 .privacy h2 {
@@ -370,7 +370,7 @@ main div.about img {
 }
 
 body {
-  background-color: #2E2E2E;
+  background-color: #fff;
 }
 
 .container {
@@ -397,6 +397,58 @@ p {
   font-weight: 400;
   font-size: 20px;
   color: black;
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+a.button {
+  text-decoration: none;
+  margin-top: 20px;
+  width: 125px;
+  height: 45px;
+  cursor: pointer;
+  border: 1px solid #25B1DA;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: linear-gradient(315deg, #25B1DA 0%, #0d324d 100%);
+  background-size: 400% 400%;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  -webkit-box-shadow: 5px px 50px inset #085a72;
+          box-shadow: 5px px 50px inset #085a72;
+}
+
+p.button {
+  text-align: center;
+  color: white;
+}
+
+a:hover {
+  background-position: right;
+}
+
+a:hover:before {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+a:focus {
+  outline: none;
 }
 
 .about {
