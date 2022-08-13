@@ -5,15 +5,17 @@ div.bg-header {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    height: 1300px;
+    height: 1000px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    
+
+    /*
     .header-vector {
         width: 100vw;
     }
+    */
 }
 
 header {
@@ -87,7 +89,7 @@ header {
 
     div.bg-header {
         background-attachment: scroll;
-        height: 820px;
+        height: 800px;
     }
 
     header {
