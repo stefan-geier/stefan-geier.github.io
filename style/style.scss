@@ -22,7 +22,7 @@ h4 {
     font-family: $font-family-header;
     font-weight: 400;
     font-size: 40px;
-    color: $main-color;
+    color: black;
 }
 
 p {
@@ -95,6 +95,21 @@ p {
         margin-top: 0px;
     }
 
+    .geeks {
+        width: 500px !important;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+ 
+    .geeks img {
+        width: 100%;
+        transition: 0.5s all ease-in-out;
+    }
+ 
+    .geeks:hover img {
+        transform: scale(1.1);
+    }
+
     div {
 
         div {
@@ -115,7 +130,7 @@ p {
 }
 
 //----------------- Image Vector -----------------//
-
+ /*
 img.vector {
     width: 100vw;
 }
@@ -124,7 +139,7 @@ img.vector-bottom {
     width: 100vw;
     margin-bottom: -6px;
 }
-
+ */
 //----------------- Quote -----------------//
 
 div.quote {
@@ -134,16 +149,16 @@ div.quote {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    height: 800px;
+    height: 500px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-
+    /*
     div {
         width: 100vw;
     }
-
+    */
     h3 {
         font-family: $font-family-header;
         font-weight: 400;
@@ -174,8 +189,7 @@ div.quote {
         position: relative;
         width: 500px;
         height: 300px;
-        border: 2px solid #25B1DA;
-        border-radius: 15px;
+        border: 2px solid $main-color;
 
         img {
             display: block;
@@ -192,7 +206,6 @@ div.quote {
             left: 0;
             width: 100%;
             height: 100%;
-            border-radius: 12px;
             background-color: $white;
             display: flex;
             flex-direction: column;
@@ -249,8 +262,7 @@ div.quote {
             position: relative;
             width: 400px;
             height: 240px;
-            border: 2px solid #25B1DA;
-            border-radius: 15px;
+            border: 2px solid $main-color;
 
             img {
                 display: block;
@@ -277,7 +289,7 @@ div.quote {
         font-family: $font-family-header;
         font-weight: 400;
         font-size: 22px;
-        color: $main-color;
+        color: black;
     }
     
     .hover-p {
@@ -288,12 +300,12 @@ div.quote {
     }
     
     //----------------- Image Vector -----------------//
-
+    /*
     img.vector {
         width: 100% !important;
         margin-bottom: -4px;
     }
-
+    */
     //----------------- About -----------------//
 
     .about {
@@ -314,7 +326,7 @@ div.quote {
     //----------------- Quote -----------------//
 
     div.quote {
-        height: 500px;
+        height: 300px;
 
         h3 {
             font-family: $font-family-header;
@@ -353,8 +365,7 @@ div.quote {
             position: relative;
             width: 300px;
             height: 180px;
-            border: 2px solid #25B1DA;
-            border-radius: 15px;
+            border: 2px solid $main-color;
 
             img {
                 display: block;
@@ -371,7 +382,6 @@ div.quote {
                 left: 0;
                 width: 100%;
                 height: 100%;
-                border-radius: 15px;
                 background-color: $white;
                 display: flex;
                 flex-direction: column;
@@ -426,7 +436,7 @@ div.quote {
         font-family: $font-family-header;
         font-weight: 400;
         font-size: 22px;
-        color: $main-color;
+        color: black;
     }
     
     .hover-p {
@@ -437,7 +447,7 @@ div.quote {
     }
     
     //----------------- Image Vector -----------------//
-
+    /*
     img.vector {
         width: 100vw;
     }
@@ -446,7 +456,7 @@ div.quote {
         width: 100vw;
         margin-bottom: -4px;
     }
-
+    */
     //----------------- About -----------------//
 
     .about {
@@ -462,13 +472,19 @@ div.quote {
             width: 300px !important;
             margin-top: 20px;
         }
+
+        .geeks {
+            width: 300px !important;
+            overflow: hidden;
+            margin: 0 auto;
+        }
     }
 
     //----------------- Quote -----------------//
 
     div.quote {
         background-attachment: scroll;
-        height: 400px;
+        height: 300px;
 
         h3 {
             font-family: $font-family-header;
@@ -507,8 +523,7 @@ div.quote {
             position: relative;
             width: 300px;
             height: 180px;
-            border: 2px solid #25B1DA;
-            border-radius: 15px;
+            border: 2px solid $main-color;
 
             img {
                 display: block;
@@ -525,7 +540,6 @@ div.quote {
                 left: 0;
                 width: 100%;
                 height: 100%;
-                border-radius: 15px;
                 background-color: $white;
                 display: flex;
                 flex-direction: column;

@@ -6,7 +6,7 @@ div.bg-header {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  height: 1300px;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -20,10 +20,11 @@ div.bg-header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-div.bg-header .header-vector {
-  width: 100vw;
+  /*
+    .header-vector {
+        width: 100vw;
+    }
+    */
 }
 
 header {
@@ -69,7 +70,7 @@ header h2 {
 header hr {
   margin-top: 40px;
   margin-bottom: 40px;
-  border-color: #25B1DA;
+  border-color: #4793e9;
   width: 100%;
 }
 
@@ -87,7 +88,7 @@ header a.link:after {
   display: block;
   content: "";
   height: 2px;
-  background: #25B1DA;
+  background: #4793e9;
   width: 0px;
   -webkit-transition: 0.4s;
   transition: 0.4s;
@@ -100,7 +101,7 @@ header a.link:hover:after {
 @media only screen and (max-width: 768px) {
   div.bg-header {
     background-attachment: scroll;
-    height: 820px;
+    height: 100vh;
   }
   header {
     width: 100%;
@@ -195,7 +196,7 @@ footer div a {
 
 footer div hr {
   margin-top: 30px;
-  border-color: #25B1DA;
+  border-color: #4793e9;
   width: 100%;
 }
 
@@ -210,7 +211,7 @@ footer a.button-footer {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 25px;
-  background-color: #EDEDED;
+  background-color: #fff;
   border: none;
   border-radius: 15px;
   width: 40px;
@@ -276,14 +277,14 @@ footer p {
 }
 
 main {
-  background-color: #EDEDED;
-  padding-top: 120px;
-  padding-bottom: 120px;
+  background-color: #fff;
+  padding-top: 300px;
+  padding-bottom: 300px;
 }
 
 main h2 {
   font-family: "Expletus Sans", cursive;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 48px;
   text-transform: uppercase;
   color: #2E2E2E;
@@ -297,7 +298,7 @@ main div.about {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 45px;
+  margin-top: 60px;
 }
 
 main div.about p {
@@ -310,6 +311,14 @@ main div.about p {
 
 main div.about img {
   width: 470px;
+}
+
+@media only screen and (max-width: 768px) {
+  main {
+    background-color: #fff;
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
 }
 
 .privacy {
@@ -351,7 +360,7 @@ main div.about img {
           align-items: center;
   margin-top: 25px;
   margin-bottom: 25px;
-  background-color: #EDEDED;
+  background-color: #fff;
   border: none;
   border-radius: 15px;
   width: 200px;
@@ -359,7 +368,7 @@ main div.about img {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 25px;
-  color: #25B1DA;
+  color: #4793e9;
   margin-top: 30px;
   text-decoration: none;
 }
@@ -382,7 +391,7 @@ h4 {
   font-family: "Expletus Sans", cursive;
   font-weight: 400;
   font-size: 40px;
-  color: #25B1DA;
+  color: black;
 }
 
 p {
@@ -414,7 +423,7 @@ a.button {
   width: 125px;
   height: 45px;
   cursor: pointer;
-  border: 1px solid #25B1DA;
+  border: 1px solid #4793e9;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -424,7 +433,7 @@ a.button {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-image: linear-gradient(315deg, #25B1DA 0%, #0d324d 100%);
+  background-image: linear-gradient(315deg, #4793e9 0%, #0d324d 100%);
   background-size: 400% 400%;
   background-position: center;
   background-repeat: no-repeat;
@@ -466,6 +475,23 @@ a:focus {
   margin-top: 0px;
 }
 
+.about .geeks {
+  width: 500px !important;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.about .geeks img {
+  width: 100%;
+  -webkit-transition: 0.5s all ease-in-out;
+  transition: 0.5s all ease-in-out;
+}
+
+.about .geeks:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
 .about div div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -480,21 +506,22 @@ a:focus {
 .about div div a {
   font-family: "Montserrat", sans-serif;
   text-decoration: none;
-  color: #25B1DA;
+  color: #4793e9;
   font-size: 22px;
   font-weight: 400;
   margin-bottom: 5px;
 }
 
+/*
 img.vector {
-  width: 100vw;
+    width: 100vw;
 }
 
 img.vector-bottom {
-  width: 100vw;
-  margin-bottom: -6px;
+    width: 100vw;
+    margin-bottom: -6px;
 }
-
+ */
 div.quote {
   background-attachment: fixed;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../img/quote-bg.jpg);
@@ -503,7 +530,7 @@ div.quote {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  height: 800px;
+  height: 500px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -511,16 +538,17 @@ div.quote {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-div.quote div {
-  width: 100vw;
+  /*
+    div {
+        width: 100vw;
+    }
+    */
 }
 
 div.quote h3 {
@@ -533,7 +561,7 @@ div.quote h3 {
 
 div.quote em {
   font-style: normal;
-  color: #25B1DA;
+  color: #4793e9;
 }
 
 .container-work {
@@ -555,8 +583,7 @@ div.quote em {
   position: relative;
   width: 500px;
   height: 300px;
-  border: 2px solid #25B1DA;
-  border-radius: 15px;
+  border: 2px solid #4793e9;
 }
 
 .container-work .my-work-box img {
@@ -574,8 +601,7 @@ div.quote em {
   left: 0;
   width: 100%;
   height: 100%;
-  border-radius: 12px;
-  background-color: #EDEDED;
+  background-color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -640,8 +666,7 @@ div.quote em {
     position: relative;
     width: 400px;
     height: 240px;
-    border: 2px solid #25B1DA;
-    border-radius: 15px;
+    border: 2px solid #4793e9;
   }
   .container-work .my-work-box img {
     display: block;
@@ -660,7 +685,7 @@ div.quote em {
     font-family: "Expletus Sans", cursive;
     font-weight: 400;
     font-size: 22px;
-    color: #25B1DA;
+    color: black;
   }
   .hover-p {
     font-family: "Montserrat", sans-serif;
@@ -668,10 +693,12 @@ div.quote em {
     font-size: 16px;
     color: black;
   }
-  img.vector {
-    width: 100% !important;
-    margin-bottom: -4px;
-  }
+  /*
+    img.vector {
+        width: 100% !important;
+        margin-bottom: -4px;
+    }
+    */
   .about {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -692,7 +719,7 @@ div.quote em {
     margin-top: 20px;
   }
   div.quote {
-    height: 500px;
+    height: 300px;
   }
   div.quote h3 {
     font-family: "Expletus Sans", cursive;
@@ -703,7 +730,7 @@ div.quote em {
   }
   div.quote em {
     font-style: normal;
-    color: #25B1DA;
+    color: #4793e9;
   }
   .container-work {
     width: 100%;
@@ -727,8 +754,7 @@ div.quote em {
     position: relative;
     width: 300px;
     height: 180px;
-    border: 2px solid #25B1DA;
-    border-radius: 15px;
+    border: 2px solid #4793e9;
   }
   .container-work .my-work-box img {
     display: block;
@@ -743,8 +769,7 @@ div.quote em {
     left: 0;
     width: 100%;
     height: 100%;
-    border-radius: 15px;
-    background-color: #EDEDED;
+    background-color: #fff;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -799,7 +824,7 @@ div.quote em {
     font-family: "Expletus Sans", cursive;
     font-weight: 400;
     font-size: 22px;
-    color: #25B1DA;
+    color: black;
   }
   .hover-p {
     font-family: "Montserrat", sans-serif;
@@ -807,13 +832,16 @@ div.quote em {
     font-size: 16px;
     color: black;
   }
-  img.vector {
-    width: 100vw;
-  }
-  img.vector-bottom {
-    width: 100vw;
-    margin-bottom: -4px;
-  }
+  /*
+    img.vector {
+        width: 100vw;
+    }
+
+    img.vector-bottom {
+        width: 100vw;
+        margin-bottom: -4px;
+    }
+    */
   .about {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -833,9 +861,14 @@ div.quote em {
     width: 300px !important;
     margin-top: 20px;
   }
+  .about .geeks {
+    width: 300px !important;
+    overflow: hidden;
+    margin: 0 auto;
+  }
   div.quote {
     background-attachment: scroll;
-    height: 400px;
+    height: 300px;
   }
   div.quote h3 {
     font-family: "Expletus Sans", cursive;
@@ -846,7 +879,7 @@ div.quote em {
   }
   div.quote em {
     font-style: normal;
-    color: #25B1DA;
+    color: #4793e9;
   }
   .container-work {
     width: 320px;
@@ -871,8 +904,7 @@ div.quote em {
     position: relative;
     width: 300px;
     height: 180px;
-    border: 2px solid #25B1DA;
-    border-radius: 15px;
+    border: 2px solid #4793e9;
   }
   .container-work .my-work-box img {
     display: block;
@@ -887,8 +919,7 @@ div.quote em {
     left: 0;
     width: 100%;
     height: 100%;
-    border-radius: 15px;
-    background-color: #EDEDED;
+    background-color: #fff;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
