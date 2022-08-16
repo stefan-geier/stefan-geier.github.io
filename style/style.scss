@@ -22,7 +22,7 @@ h4 {
     font-family: $font-family-header;
     font-weight: 400;
     font-size: 40px;
-    color: $main-color;
+    color: black;
 }
 
 p {
@@ -93,6 +93,21 @@ p {
     .about-me_img {
         width: 500px !important;
         margin-top: 0px;
+    }
+
+    .geeks {
+        width: 500px !important;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+ 
+    .geeks img {
+        width: 100%;
+        transition: 0.5s all ease-in-out;
+    }
+ 
+    .geeks:hover img {
+        transform: scale(1.1);
     }
 
     div {
@@ -274,7 +289,7 @@ div.quote {
         font-family: $font-family-header;
         font-weight: 400;
         font-size: 22px;
-        color: $main-color;
+        color: black;
     }
     
     .hover-p {
@@ -421,7 +436,7 @@ div.quote {
         font-family: $font-family-header;
         font-weight: 400;
         font-size: 22px;
-        color: $main-color;
+        color: black;
     }
     
     .hover-p {
@@ -456,6 +471,12 @@ div.quote {
         .about-me_img {
             width: 300px !important;
             margin-top: 20px;
+        }
+
+        .geeks {
+            width: 300px !important;
+            overflow: hidden;
+            margin: 0 auto;
         }
     }
 

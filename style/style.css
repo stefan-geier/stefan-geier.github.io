@@ -6,7 +6,7 @@ div.bg-header {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  height: 1000px;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -101,7 +101,7 @@ header a.link:hover:after {
 @media only screen and (max-width: 768px) {
   div.bg-header {
     background-attachment: scroll;
-    height: 800px;
+    height: 100vh;
   }
   header {
     width: 100%;
@@ -391,7 +391,7 @@ h4 {
   font-family: "Expletus Sans", cursive;
   font-weight: 400;
   font-size: 40px;
-  color: #4793e9;
+  color: black;
 }
 
 p {
@@ -473,6 +473,23 @@ a:focus {
 .about .about-me_img {
   width: 500px !important;
   margin-top: 0px;
+}
+
+.about .geeks {
+  width: 500px !important;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.about .geeks img {
+  width: 100%;
+  -webkit-transition: 0.5s all ease-in-out;
+  transition: 0.5s all ease-in-out;
+}
+
+.about .geeks:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .about div div {
@@ -668,7 +685,7 @@ div.quote em {
     font-family: "Expletus Sans", cursive;
     font-weight: 400;
     font-size: 22px;
-    color: #4793e9;
+    color: black;
   }
   .hover-p {
     font-family: "Montserrat", sans-serif;
@@ -807,7 +824,7 @@ div.quote em {
     font-family: "Expletus Sans", cursive;
     font-weight: 400;
     font-size: 22px;
-    color: #4793e9;
+    color: black;
   }
   .hover-p {
     font-family: "Montserrat", sans-serif;
@@ -843,6 +860,11 @@ div.quote em {
   .about .about-me_img {
     width: 300px !important;
     margin-top: 20px;
+  }
+  .about .geeks {
+    width: 300px !important;
+    overflow: hidden;
+    margin: 0 auto;
   }
   div.quote {
     background-attachment: scroll;
