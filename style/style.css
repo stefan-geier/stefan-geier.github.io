@@ -98,7 +98,7 @@ header a.link:hover:after {
   width: 100%;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1500px) {
   div.bg-header {
     background-attachment: scroll;
     height: 100vh;
@@ -133,7 +133,7 @@ header a.link:hover:after {
 
 @media only screen and (max-width: 500px) {
   div.bg-header {
-    height: 780px;
+    height: 100vh;
   }
   header {
     width: 320px;
@@ -164,9 +164,9 @@ header a.link:hover:after {
 }
 
 footer {
-  margin-top: 120px;
+  padding-top: 50px;
   background-color: #2E2E2E;
-  padding-bottom: 30px;
+  padding-bottom: 50px;
 }
 
 footer div {
@@ -248,7 +248,7 @@ footer p {
   margin-top: 10px;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1500px) {
   footer {
     margin-top: 100px;
   }
@@ -278,8 +278,8 @@ footer p {
 
 main {
   background-color: #fff;
-  padding-top: 300px;
-  padding-bottom: 300px;
+  padding-top: 250px;
+  padding-bottom: 250px;
 }
 
 main h2 {
@@ -311,6 +311,10 @@ main div.about p {
 
 main div.about img {
   width: 470px;
+}
+
+.my-work-spacing {
+  padding-bottom: 100px !important;
 }
 
 @media only screen and (max-width: 768px) {
@@ -379,7 +383,7 @@ main div.about img {
 }
 
 body {
-  background-color: #2E2E2E;
+  background-color: #fff;
 }
 
 .container {
@@ -643,7 +647,76 @@ div.quote em {
           transform: translateY(0px);
 }
 
-@media only screen and (max-width: 1200px) {
+.service-container {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+.service-container .servic-header {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.service-container .servic-header .logo {
+  width: 200px;
+}
+
+.service-container .servic-header h2 {
+  margin-top: 60px;
+  font-family: "Expletus Sans", cursive;
+  font-weight: 600;
+  font-size: 48px;
+  text-transform: uppercase;
+  color: #2E2E2E;
+  text-align: center;
+}
+
+.service-container .what-i-do {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 80px;
+}
+
+.service-container .what-i-do div {
+  width: 450px;
+}
+
+.service-container .what-i-do h3 {
+  margin-top: 80px;
+  margin-bottom: 30px;
+  font-family: "Expletus Sans", cursive;
+  font-weight: 600;
+  font-size: 30px;
+  color: #2E2E2E;
+}
+
+.service-container .what-i-do p {
+  font-size: 20px;
+}
+
+.service-container .button-div {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media only screen and (max-width: 1500px) {
   .container-work {
     width: 100%;
     margin: 0 auto;
@@ -671,6 +744,12 @@ div.quote em {
   .container-work .my-work-box img {
     display: block;
     width: 100%;
+  }
+  .service-container {
+    width: 100%;
+  }
+  .service-container .servic-header .logo {
+    width: 100px;
   }
 }
 
@@ -809,6 +888,38 @@ div.quote em {
   .container-work .my-work-box .image_overlay:hover > * {
     -webkit-transform: translateY(0px);
             transform: translateY(0px);
+  }
+  .service-container {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .service-container .servic-header .logo {
+    width: 100px;
+  }
+  .service-container .servic-header h2 {
+    margin-top: 40px;
+    font-size: 32px;
+  }
+  .service-container .what-i-do {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .service-container .what-i-do div {
+    width: 450px;
+  }
+  .service-container .what-i-do h3 {
+    font-size: 25px;
+  }
+  .service-container .what-i-do p {
+    font-size: 18px;
   }
 }
 
@@ -956,6 +1067,38 @@ div.quote em {
   .container-work .my-work-box .image_overlay:hover > * {
     -webkit-transform: translateY(0px);
             transform: translateY(0px);
+  }
+  .service-container {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .service-container .servic-header .logo {
+    width: 100px;
+  }
+  .service-container .servic-header h2 {
+    margin-top: 40px;
+    font-size: 32px;
+  }
+  .service-container .what-i-do {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .service-container .what-i-do div {
+    width: 300px;
+  }
+  .service-container .what-i-do h3 {
+    font-size: 25px;
+  }
+  .service-container .what-i-do p {
+    font-size: 18px;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -83,9 +83,9 @@ header {
 
 }
 
-//:::::::::::::::::: Tablet :::::::::::::::::://
+//:::::::::::::::::: Laptop :::::::::::::::::://
 
-@media only screen and (max-width: $breakpoint-md) {
+@media only screen and (max-width: $breakpoint-xl) {
 
     div.bg-header {
         background-attachment: scroll;
@@ -123,10 +123,10 @@ header {
 @media only screen and (max-width: $breakpoint-xs) {
 
     div.bg-header {
-        height: 780px;
+        height: 100vh;
     }
 
-    header {
+    header { 
         width: 320px;
         margin-top: 80px;
         display: flex;

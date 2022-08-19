@@ -10,7 +10,7 @@
 }
 
 body {
-    background-color: $bg-color;
+    background-color: $white;
 }
 
 .container {
@@ -235,6 +235,64 @@ div.quote {
     }
 }
 
+//----------------- Services Site -----------------//
+
+.service-container {
+    width: 1100px;
+    margin: 0 auto;
+
+    .servic-header {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+        .logo {
+            width: 200px;
+        }
+    
+        h2 {
+            margin-top: 60px;
+            font-family: $font-family-header;
+            font-weight: 600;
+            font-size: 48px;
+            text-transform: uppercase;
+            color: $gray;
+            text-align: center;
+        }
+    }
+    
+    .what-i-do {
+    
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 80px;
+    
+        div {
+            width: 450px;
+        }
+    
+        h3 {
+            margin-top: 80px;
+            margin-bottom: 30px;
+            font-family: $font-family-header;
+            font-weight: 600;
+            font-size: 30px;
+            color: $gray;
+        }
+
+        p {
+            font-size: 20px;
+        }
+    }
+
+    .button-div {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
 //:::::::::::::::::: Small Laptop :::::::::::::::::://
 
 @media only screen and (max-width: $breakpoint-xl) {
@@ -270,6 +328,19 @@ div.quote {
             }
         }
     }
+
+//----------------- Services Site -----------------//
+
+.service-container {
+    width: 100%;
+
+    .servic-header {
+
+        .logo {
+            width: 100px;
+        }
+    }
+}
 
 }
 
@@ -416,6 +487,43 @@ div.quote {
         }
     }
 
+//----------------- Services Site -----------------//
+
+.service-container {
+    width: 100%;
+    margin: 0 auto;
+
+    .servic-header {
+    
+        .logo {
+            width: 100px;
+        }
+    
+        h2 {
+            margin-top: 40px;
+            font-size: 32px;
+        }
+    }
+    
+    .what-i-do {
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+        div {
+            width: 450px;
+        }
+    
+        h3 {
+            font-size: 25px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+    }
+}
 }
 
 
@@ -570,4 +678,41 @@ div.quote {
         }
     }
 
+    //----------------- Services Site -----------------//
+
+    .service-container {
+        width: 100%;
+        margin: 0 auto;
+    
+        .servic-header {
+        
+            .logo {
+                width: 100px;
+            }
+        
+            h2 {
+                margin-top: 40px;
+                font-size: 32px;
+            }
+        }
+        
+        .what-i-do {
+        
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        
+            div {
+                width: 300px;
+            }
+        
+            h3 {
+                font-size: 25px;
+            }
+    
+            p {
+                font-size: 18px;
+            }
+        }
+    }
 }
