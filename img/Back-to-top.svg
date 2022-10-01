@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+  <g id="Group_1" data-name="Group 1" transform="translate(-1560 -6016)">
+    <rect id="Rectangle_2" data-name="Rectangle 2" width="60" height="60" rx="15" transform="translate(1560 6016)" fill="#5f85db"/>
+    <path id="Icon_awesome-arrow-up" data-name="Icon awesome-arrow-up" d="M2.454,20.355.893,18.795a1.681,1.681,0,0,1,0-2.384L14.555,2.742a1.681,1.681,0,0,1,2.384,0L30.6,16.4a1.681,1.681,0,0,1,0,2.384l-1.561,1.561a1.689,1.689,0,0,1-2.412-.028l-8.065-8.466V32.063a1.683,1.683,0,0,1-1.687,1.688h-2.25a1.683,1.683,0,0,1-1.687-1.687V11.855L4.866,20.327a1.677,1.677,0,0,1-2.412.028Z" transform="translate(1574.254 6028.002)" fill="#fff"/>
+  </g>
+</svg>
