@@ -1,718 +1,252 @@
 @import "./variables";
-@import "./header";
-@import "./footer";
-@import "./main-part";
-@import "./privacy";
+
 
 * {
     margin: 0;
     padding: 0;
+    border: 0;
+    box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 body {
-    background-color: $white;
+    background-color: $primary;
+    font-family: 'Montserrat', sans-serif;  
 }
 
 .container {
-    width: 1000px;
+    width: 1400px;
     margin: 0 auto;
+}
+
+h1 {
+    font-size: 58px;
+    line-height: 90px;
+    font-weight: 600;
+    color: $secondary;
+}
+
+h2 {
+    font-size: 50px;
+    line-height: 150%;
+    font-weight: 600;
+    color: $secondary;
+}
+
+h3 {
+    font-size: 30px;
+    line-height: 150%;
+    font-weight: 600;
+    color: $secondary;
 }
 
 h4 {
-    font-family: $font-family-header;
-    font-weight: 400;
-    font-size: 40px;
-    color: black;
+    font-size: 30px;
+    line-height: 150%;
+    font-weight: 600;
+    color: $secondary;
+}
+
+h5 {
+    font-size: 20px;
+    line-height: 150%;
+    font-weight: 500;
+    color: $secondary;
+    margin-bottom: 30px;
 }
 
 p {
-    font-family: $font-family-text;
+    font-size: 18px;
+    line-height: 22px;
     font-weight: 400;
-    font-size: 20px;
-    color: black;
+    color: $secondary;
 }
 
-.hover-p {
-    font-family: $font-family-text;
-    font-weight: 400;
-    font-size: 20px;
-    color: black;
+img {
+    width: 600px;
+    height: 360px;
+    border-radius: 15px;
 }
 
-.noselect {
-    -webkit-touch-callout: none;
-      -webkit-user-select: none;
-       -khtml-user-select: none;
-         -moz-user-select: none;
-          -ms-user-select: none;
-              user-select: none;
-          -webkit-tap-highlight-color: transparent;
-  }
-  
-  a.button {
-    text-decoration: none;
-    margin-top: 20px;
-    width: 125px;
-    height: 45px;
-    cursor: pointer;
-    border: 1px solid $main-color;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-image: linear-gradient(315deg, $main-color 0%, #0d324d 100%);
-    background-size: 400% 400%;
-    background-position: center;
-    background-repeat: no-repeat;
-    transition: 500ms;
-    box-shadow: 5px px 50px inset #085a72;
-  }
-
-  p.button {
-    text-align: center;
-    color: white;
-  }
-  
-  a:hover {
-      background-position: right;
-  }
-  
-  a:hover:before {
-      color: rgba(255,255,255,0.8);
-  }
-  
-  a:focus {
-      outline: none;
-  }
-
-//----------------- About -----------------//
-
-.about {
-    display: flex;
-    flex-direction: row;
-
-    .about-me_img {
-        width: 500px !important;
-        margin-top: 0px;
-    }
-
-    .geeks {
-        width: 500px !important;
-        overflow: hidden;
-        margin: 0 auto;
-    }
- 
-    .geeks img {
-        width: 100%;
-        transition: 0.5s all ease-in-out;
-    }
- 
-    .geeks:hover img {
-        transform: scale(1.1);
-    }
-
-    div {
-
-        div {
-            display: flex;
-            flex-direction: column;
-            margin-top: 20px;
-        
-            a {
-                font-family: $font-family-text;
-                text-decoration: none;
-                color: $main-color;
-                font-size: 22px;
-                font-weight: 400;
-                margin-bottom: 5px;
-            }
-        }
-    }
+.line {
+    width: 100%;
 }
 
-//----------------- Image Vector -----------------//
- /*
-img.vector {
-    width: 100vw;
+.blue-exclamation-mark {
+    color: $tertiary;
 }
 
-img.vector-bottom {
-    width: 100vw;
-    margin-bottom: -6px;
-}
- */
-//----------------- Quote -----------------//
-
-div.quote {
-    background-attachment: fixed;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/quote-bg.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    height: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    /*
-    div {
-        width: 100vw;
-    }
-    */
-    h3 {
-        font-family: $font-family-header;
-        font-weight: 400;
-        font-size: 60px;
-        color: white;
-        text-shadow: 1px 1px 6px black;
-    }
-
-    em {
-        font-style: normal;
-        color: $main-color;
-    }
+.blue-h1 {
+    color: $tertiary;
 }
 
-//----------------- My Work -----------------//
+p.header-title {
+    font-size: 316px;
+    font-weight: 900;
+}
 
-.container-work {
-    width: 1100px;
-    margin: 0 auto;
 
-    .my-work-line {
+//::::::: Menu ::::::://
+
+nav {
+
+    .nav_box {
         display: flex;
-        justify-content: space-between;
-        margin-top: 80px;
-    }
-
-    .my-work-box {
-        position: relative;
-        width: 500px;
-        height: 300px;
-        border: 2px solid $main-color;
-
-        img {
-            display: block;
-            width: 100%;
-        }
+        justify-content:end;
+        column-gap: 40px;
 
         a {
+            margin-top: 70px;
+            color: $secondary;
+            font-size: 20px;
             text-decoration: none;
         }
+    }
+}
 
-        .image_overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: $white;
+
+//::::::: Header ::::::://
+
+header {
+    margin-top: 185px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 230px;
+}
+
+
+//::::::: What I do ::::::://
+
+.what-i-do {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 130px;
+    margin-bottom: 400px;
+
+    .what-i-do_text {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        .what-i-do_subtitles {
+            display: flex;
+            margin-top: 50px;
+
+            .what-i-do_p {
+                width: 220px;
+                margin-right: 70px;
+            }
+        }
+    }
+}
+
+
+//::::::: My Work ::::::://
+
+.my-work {
+    margin-bottom: 00px;
+
+    .my-work_box{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 130px;
+        margin-bottom: 220px;
+    
+        .my-work_text {
             display: flex;
             flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            opacity: 0;
-            transition: opacity 0.3s;
-
-            img {
-                margin-bottom: 30px;
-                margin-top: 30px;
+            align-items: flex-start;
+    
+            .my-work_sub-info {
+                margin-top: 10px;
+                font-size: 30px;
+                line-height: 150%;
+                font-weight: 500;
             }
-        }
-
-        .image_overlay > * {
-            transform: translateY(20px);
-            transition: transform 0.3s;
-        }
-
-        .image_overlay:hover {
-            opacity: 1;
-        }
-
-        .image_overlay:hover > * {
-            transform: translateY(0px);
-        }
-    }
-}
-
-//----------------- Services Site -----------------//
-
-.service-container {
-    width: 1100px;
-    margin: 0 auto;
-
-    .servic-header {
-        margin-top: 50px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
     
-        .logo {
-            width: 200px;
-        }
-    
-        h2 {
-            margin-top: 60px;
-            font-family: $font-family-header;
-            font-weight: 600;
-            font-size: 48px;
-            text-transform: uppercase;
-            color: $gray;
-            text-align: center;
-        }
-    }
-    
-    .what-i-do {
-    
-        display: flex;
-        justify-content: space-around;
-        margin-bottom: 80px;
-    
-        div {
-            width: 450px;
-        }
-    
-        h3 {
-            margin-top: 80px;
-            margin-bottom: 30px;
-            font-family: $font-family-header;
-            font-weight: 600;
-            font-size: 30px;
-            color: $gray;
-        }
-
-        p {
-            font-size: 20px;
-        }
-    }
-
-    .button-div {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
-}
-
-//:::::::::::::::::: Small Laptop :::::::::::::::::://
-
-@media only screen and (max-width: $breakpoint-xl) {
-
-    //----------------- My Work -----------------//
-
-    .container-work {
-        width: 100%;
-        margin: 0 auto;
-
-        
-        h2 {
-            font-size: 32px;
-        }
-
-        .my-work-line {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            margin-top: 60px;
-        }
-
-        .my-work-box {
-            margin-top: 30px;
-            position: relative;
-            width: 400px;
-            height: 240px;
-            border: 2px solid $main-color;
-
-            img {
-                display: block;
-                width: 100%;
-            }
-        }
-    }
-
-//----------------- Services Site -----------------//
-
-.service-container {
-    width: 100%;
-
-    .servic-header {
-
-        .logo {
-            width: 100px;
-        }
-    }
-}
-
-}
-
-//:::::::::::::::::: Tablet :::::::::::::::::://
-
-@media only screen and (max-width: $breakpoint-md) {
-
-    .container {
-        width: 100% ;
-
-        h2 {
-            font-size: 32px;
-        }
-    }
-
-    h4 {
-        font-family: $font-family-header;
-        font-weight: 400;
-        font-size: 22px;
-        color: black;
-    }
-    
-    .hover-p {
-        font-family: $font-family-text;
-        font-weight: 400;
-        font-size: 16px;
-        color: black;
-    }
-    
-    //----------------- Image Vector -----------------//
-    /*
-    img.vector {
-        width: 100% !important;
-        margin-bottom: -4px;
-    }
-    */
-    //----------------- About -----------------//
-
-    .about {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        .p-box {
-            width: 500px;
-        }
-        
-        .about-me_img {
-            width: 500px !important;
-            margin-top: 20px;
-        }
-    }
-
-    //----------------- Quote -----------------//
-
-    div.quote {
-        height: 300px;
-
-        h3 {
-            font-family: $font-family-header;
-            font-weight: 400;
-            font-size: 40px;
-            color: white;
-            text-align: center;
-        }
-
-        em {
-            font-style: normal;
-            color: $main-color;
-        }
-    }
-
-    //----------------- My Work -----------------//
-
-    .container-work {
-        width: 100%;
-        margin: 0 auto;
-
-        
-        h2 {
-            font-size: 32px;
-        }
-
-        .my-work-line {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            margin-top: 0px;
-        }
-
-        .my-work-box {
-            margin-top: 30px;
-            position: relative;
-            width: 300px;
-            height: 180px;
-            border: 2px solid $main-color;
-
-            img {
-                display: block;
-                width: 100%;
-            }
-
             a {
-                text-decoration: none;
-            }
-
-            .image_overlay {
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                background-color: $white;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                opacity: 0;
-                transition: opacity 0.3s;
-
-                img {
-                    width: 120px;
-                    margin-bottom: 15px;
-                    margin-top: 15px;
-                }   
-
-                .myg-logo-size {
-                    width: 50px;
-                }
-            }
-
-            .image_overlay > * {
-                transform: translateY(20px);
-                transition: transform 0.3s;
-            }
-
-            .image_overlay:hover {
-                opacity: 1;
-            }
-
-            .image_overlay:hover > * {
-                transform: translateY(0px);
-            }
-        }
-    }
-
-//----------------- Services Site -----------------//
-
-.service-container {
-    width: 100%;
-    margin: 0 auto;
-
-    .servic-header {
-    
-        .logo {
-            width: 100px;
-        }
-    
-        h2 {
-            margin-top: 40px;
-            font-size: 32px;
-        }
-    }
-    
-    .what-i-do {
-    
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    
-        div {
-            width: 450px;
-        }
-    
-        h3 {
-            font-size: 25px;
-        }
-
-        p {
-            font-size: 18px;
-        }
-    }
-}
-}
-
-
-//:::::::::::::::::: Mobile :::::::::::::::::://
-
-@media only screen and (max-width: $breakpoint-xs) {
-
-    .container {
-        width: 320px;
-        margin: 0 auto; 
-
-        h2 {
-            font-size: 32px;
-        }
-    }
-
-    h4 {
-        font-family: $font-family-header;
-        font-weight: 400;
-        font-size: 22px;
-        color: black;
-    }
-    
-    .hover-p {
-        font-family: $font-family-text;
-        font-weight: 400;
-        font-size: 16px;
-        color: black;
-    }
-    
-    //----------------- Image Vector -----------------//
-    /*
-    img.vector {
-        width: 100vw;
-    }
-
-    img.vector-bottom {
-        width: 100vw;
-        margin-bottom: -4px;
-    }
-    */
-    //----------------- About -----------------//
-
-    .about {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        .p-box {
-            width: 300px;
-        }
-        
-        .about-me_img {
-            width: 300px !important;
-            margin-top: 20px;
-        }
-
-        .geeks {
-            width: 300px !important;
-            overflow: hidden;
-            margin: 0 auto;
-        }
-    }
-
-    //----------------- Quote -----------------//
-
-    div.quote {
-        background-attachment: scroll;
-        height: 300px;
-
-        h3 {
-            font-family: $font-family-header;
-            font-weight: 400;
-            font-size: 30px;
-            color: white;
-            text-align: center;
-        }
-
-        em {
-            font-style: normal;
-            color: $main-color;
-        }
-    }
-
-    //----------------- My Work -----------------//
-
-    .container-work {
-        width: 320px;
-        margin: 0 auto;
-
-        
-        h2 {
-            font-size: 32px;
-        }
-
-        .my-work-line {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            margin-top: 0px;
-        }
-
-        .my-work-box {
-            margin-top: 30px;
-            position: relative;
-            width: 300px;
-            height: 180px;
-            border: 2px solid $main-color;
-
-            img {
-                display: block;
-                width: 100%;
-            }
-
-            a {
-                text-decoration: none;
-            }
-
-            .image_overlay {
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                background-color: $white;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                opacity: 0;
-                transition: opacity 0.3s;
-
-                img {
-                    width: 120px;
-                    margin-bottom: 15px;
-                    margin-top: 15px;
-                }
-            }
-
-            .image_overlay > * {
-                transform: translateY(20px);
-                transition: transform 0.3s;
-            }
-
-            .image_overlay:hover {
-                opacity: 1;
-            }
-
-            .image_overlay:hover > * {
-                transform: translateY(0px);
-            }
-        }
-    }
-
-    //----------------- Services Site -----------------//
-
-    .service-container {
-        width: 100%;
-        margin: 0 auto;
-    
-        .servic-header {
-        
-            .logo {
-                width: 100px;
-            }
-        
-            h2 {
                 margin-top: 40px;
-                font-size: 32px;
-            }
-        }
-        
-        .what-i-do {
-        
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        
-            div {
-                width: 300px;
-            }
-        
-            h3 {
-                font-size: 25px;
-            }
-    
-            p {
-                font-size: 18px;
+                text-decoration: underline $tertiary 2px;
+                color: $secondary;
+                font-size: 20px;
             }
         }
     }
 }
+
+
+//::::::: Contact ::::::://
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 130px;
+    margin-bottom: 220px;
+
+    .contact_text {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+
+        .contact_subtitles {
+            display: flex;
+            align-items: center;
+            margin-right: 75px;
+            margin-top: 100px;
+
+            .contact_icon {
+                width: 35px;
+                height: auto;
+                border-radius: 0px;
+            }
+
+            a.contact_a {
+                font-size: 25px;
+                text-decoration: none;
+                color: $secondary;
+                margin-left: 10px;
+            }
+        }
+    }
+}
+
+
+//::::::: Footer ::::::://
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+
+    .footer_text {
+
+        .footer_privacy {
+            margin-top: 20px;
+
+            a {
+                font-size: 15px;
+                text-decoration: underline $tertiary 2px;
+                color: $secondary;
+                margin-right: 25px;
+            }
+        }
+    }
+    
+    .footer_back-to-top-bt {
+
+        .back-to-top-bt {
+
+            .footer_img {
+                width: 60px;
+                height: 60px;
+            }
+        }
+    }
+}
+
+@import "./responsiv";
