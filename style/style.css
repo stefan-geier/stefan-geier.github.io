@@ -86,6 +86,25 @@ p.header-title {
   font-weight: 900;
 }
 
+nav .language {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+  margin-top: 20px;
+}
+
+nav .language a {
+  margin-top: 20px;
+  color: #FFF;
+  font-size: 16px;
+  text-decoration: none;
+}
+
 nav .nav_box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -98,7 +117,7 @@ nav .nav_box {
 }
 
 nav .nav_box a {
-  margin-top: 70px;
+  margin-top: 20px;
   color: #FFF;
   font-size: 20px;
   text-decoration: none;
