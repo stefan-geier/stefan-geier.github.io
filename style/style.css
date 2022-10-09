@@ -332,6 +332,14 @@ footer .footer_back-to-top-bt .back-to-top-bt .footer_img {
     margin-top: 50px;
     font-size: 150px;
   }
+  nav .language {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   nav .nav_box {
     display: -webkit-box;
     display: -ms-flexbox;

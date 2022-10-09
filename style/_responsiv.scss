@@ -51,6 +51,11 @@
 
     nav {
 
+        .language {
+            display: flex;
+            justify-content: center;
+        }
+
         .nav_box {
             display: flex;
             justify-content:center;
