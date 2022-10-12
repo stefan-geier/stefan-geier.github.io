@@ -321,7 +321,7 @@ footer .footer_back-to-top-bt .back-to-top-bt .footer_img {
     margin-bottom: 15px;
   }
   img {
-    width: 100%;
+    width: 320px;
     height: auto;
     margin-top: 30px;
   }
@@ -466,6 +466,12 @@ footer .footer_back-to-top-bt .back-to-top-bt .footer_img {
   footer .footer_back-to-top-bt .back-to-top-bt .footer_img {
     width: 50px;
     height: 50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .what-i-do_p {
+    width: auto !important;
   }
 }
 /*# sourceMappingURL=style.css.map */
