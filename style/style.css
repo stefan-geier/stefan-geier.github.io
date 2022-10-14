@@ -71,6 +71,7 @@ img {
 
 .line {
   width: 100%;
+  margin-top: 50px;
 }
 
 .blue-exclamation-mark {
@@ -277,6 +278,10 @@ footer {
   padding-bottom: 50px;
 }
 
+footer .footer_text {
+  margin-top: 0px;
+}
+
 footer .footer_text .footer_privacy {
   margin-top: 20px;
 }
@@ -294,6 +299,32 @@ footer .footer_back-to-top-bt .back-to-top-bt .footer_img {
   height: 60px;
 }
 
+.about-me {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 260px;
+  -webkit-column-gap: 80px;
+          column-gap: 80px;
+}
+
+.about-me .about-me-text {
+  width: 700px;
+}
+
+.about-me .about-me-text h3 {
+  margin-top: 40px;
+}
+
+.about-me img {
+  width: 520px;
+  height: auto;
+}
+
 @media screen and (max-width: 1420px) {
   .container {
     max-width: 1400px;
@@ -302,7 +333,7 @@ footer .footer_back-to-top-bt .back-to-top-bt .footer_img {
     padding-right: 25px;
   }
   h1 {
-    font-size: 25px;
+    font-size: 30px;
     line-height: 39px;
     text-align: center;
     margin-top: 80px;
@@ -447,6 +478,9 @@ footer .footer_back-to-top-bt .back-to-top-bt .footer_img {
         -ms-flex-align: center;
             align-items: center;
   }
+  footer .footer_text {
+    margin-top: -40px;
+  }
   footer .footer_text p {
     font-size: 14px;
   }
@@ -455,10 +489,6 @@ footer .footer_back-to-top-bt .back-to-top-bt .footer_img {
   }
   footer .footer_text .footer_privacy a {
     font-size: 14px;
-    -webkit-text-decoration: underline #5F85DB 2px;
-            text-decoration: underline #5F85DB 2px;
-    color: #FFF;
-    margin-right: 25px;
   }
   footer .footer_back-to-top-bt {
     margin-top: 20px;
@@ -466,6 +496,27 @@ footer .footer_back-to-top-bt .back-to-top-bt .footer_img {
   footer .footer_back-to-top-bt .back-to-top-bt .footer_img {
     width: 50px;
     height: 50px;
+  }
+  .about-me {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 0px;
+  }
+  .about-me .about-me-text {
+    width: 90%;
+  }
+  .about-me .about-me-text h1 {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  .about-me img {
+    width: 320px;
+    height: auto;
   }
 }
 

@@ -73,6 +73,7 @@ img {
 
 .line {
     width: 100%;
+    margin-top: 50px;
 }
 
 .blue-exclamation-mark {
@@ -238,6 +239,7 @@ footer {
     padding-bottom: 50px;
 
     .footer_text {
+        margin-top: 0px;
 
         .footer_privacy {
             margin-top: 20px;
@@ -262,5 +264,30 @@ footer {
         }
     }
 }
+
+
+//::::::: About Me Page ::::::://
+
+.about-me {
+    display: flex;
+    flex-direction: row;
+    margin-top: 260px;
+    column-gap: 80px;
+
+    .about-me-text {
+        width: 700px;
+
+
+        h3 {
+            margin-top: 40px;;
+        }
+    }
+
+    img {
+        width: 520px;
+        height: auto;
+    }
+}
+
 
 @import "./responsiv";
