@@ -113,6 +113,10 @@ nav {
         justify-content:end;
         column-gap: 40px;
 
+        .back-to-home {
+            margin-top: 40px;
+        }
+
         a {
             margin-top: 20px;
             color: $secondary;
@@ -130,7 +134,7 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-bottom: 230px;
+    margin-bottom: 180px;
 }
 
 
@@ -268,11 +272,27 @@ footer {
 
 //::::::: About Me Page ::::::://
 
+.about-me-button {
+    display: flex;
+    justify-content: center;
+
+    a {
+        font-size: 18px;
+        padding: 16px 22px;
+        background-color: $tertiary;
+        color: $secondary;
+        border-radius: 15px;
+        text-decoration: none;
+    }
+}
+
+
+
 .about-me {
     display: flex;
+    justify-content: space-between;
     flex-direction: row;
-    margin-top: 260px;
-    column-gap: 80px;
+    margin-top: 80px;
 
     .about-me-text {
         width: 700px;
@@ -281,6 +301,19 @@ footer {
         h3 {
             margin-top: 40px;;
         }
+
+        div.about-me-links {
+            display: flex;
+            column-gap: 20px;
+
+            a {
+                margin-top: 5px;
+                color: white;
+                text-decoration: underline $tertiary;
+            }
+        }
+
+       
     }
 
     img {
