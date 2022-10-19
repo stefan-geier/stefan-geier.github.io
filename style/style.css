@@ -117,6 +117,10 @@ nav .nav_box {
           column-gap: 40px;
 }
 
+nav .nav_box .back-to-home {
+  margin-top: 40px;
+}
+
 nav .nav_box a {
   margin-top: 20px;
   color: #FFF;
@@ -134,7 +138,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 230px;
+  margin-bottom: 180px;
 }
 
 .what-i-do {
@@ -299,17 +303,36 @@ footer .footer_back-to-top-bt .back-to-top-bt .footer_img {
   height: 60px;
 }
 
+.about-me-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.about-me-button a {
+  font-size: 18px;
+  padding: 16px 22px;
+  background-color: #5F85DB;
+  color: #FFF;
+  border-radius: 15px;
+  text-decoration: none;
+}
+
 .about-me {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin-top: 260px;
-  -webkit-column-gap: 80px;
-          column-gap: 80px;
+  margin-top: 80px;
 }
 
 .about-me .about-me-text {
@@ -318,6 +341,21 @@ footer .footer_back-to-top-bt .back-to-top-bt .footer_img {
 
 .about-me .about-me-text h3 {
   margin-top: 40px;
+}
+
+.about-me .about-me-text div.about-me-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+}
+
+.about-me .about-me-text div.about-me-links a {
+  margin-top: 5px;
+  color: white;
+  -webkit-text-decoration: underline #5F85DB;
+          text-decoration: underline #5F85DB;
 }
 
 .about-me img {
