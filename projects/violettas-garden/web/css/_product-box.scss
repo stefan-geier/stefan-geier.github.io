@@ -1,0 +1,117 @@
+// Product Box //
+
+.logo-product-site {
+    text-align: center;
+    
+    .img {
+        width: 600px;
+    }
+}
+
+.two-product-boxes {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.product-box {
+    background-color: $white;
+    border-radius: 20px;
+    padding: 20px 25px;
+    box-shadow: 0px  0px 10px rgba(0, 0, 0, 0.16);
+    width: 590px;
+
+    .healdine-box {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    hr {
+        border: 1px solid $primarycolor;
+        margin-top: 0px;
+    }
+
+    .img-and-description-box {
+        display: flex;
+        flex-direction: row;
+
+        .product-img {
+            border: 7px solid $primarycolor;
+            margin-right: 30px;
+        }
+
+        div {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            p {
+                width: 210px;
+            }
+        }
+    }
+}
+
+
+// Laptop //
+
+@media only screen and (max-width: 1024px) {
+    
+    .logo-product-site {
+        
+        img {
+            width: 400px;
+        }
+    }
+
+    .two-product-boxes {
+        margin-top: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-box {
+        margin-top: 20px;
+    }
+}
+
+
+// Mobile //
+
+@media only screen and (max-width: 450px) {
+    
+    .logo-product-site {
+        
+        img {
+            width: 200px;
+        }
+    }
+
+    .product-box {
+        padding: 15px 20px;
+        width: 350px;
+    
+        .img-and-description-box {
+            display: flex;
+            flex-direction: column;
+    
+            .product-img {
+                margin-right: 0px;
+                margin-bottom: 15px;
+                max-height: 250px;
+                object-fit: cover;
+            }
+    
+            div {
+    
+                p {
+                    margin-bottom: 20px;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

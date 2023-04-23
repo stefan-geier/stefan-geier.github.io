@@ -1,0 +1,155 @@
+// Footer //
+footer {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+
+    .violet-box {
+        height: 100px;
+        width: 100%;
+        margin-top: 150px;
+        margin-bottom: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $primarycolor;
+        color: white;
+    }
+
+    .footer-text {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    
+        .contact-box {
+            display: flex;
+            flex-direction: row;
+
+            .contact {
+
+                div {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: baseline;
+                    width: 340px;
+
+                    img {
+                        margin-right: 8px;
+                        height: 100%;
+                    }
+
+                    a {
+                        text-decoration: none;
+                        color: black;
+                    }
+
+                    a:hover {
+                        color: $primarycolor;
+                    }
+                }
+            }
+        }
+        .logo {
+            img {
+                width: 200px;
+            }
+        }
+    }
+    .privacy {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        a:hover {
+            color: $primarycolor;
+        }
+
+        .footer-margin-right {
+            margin-right: 10px;
+        }
+        .footer-margin-left {
+            margin-left: 10px;
+        }
+    }
+
+    p.copyright {
+        font-size: 13px;
+        text-align: center;
+    }
+}
+
+// Tablet //
+
+@media only screen and (max-width: 768px) {
+    footer {
+        .violet-box {
+            height: 80px;
+
+        }
+    
+        .footer-text {
+        
+            .contact-box {
+    
+                .contact {
+    
+                    div {
+                        width: 270px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// Mobile //
+
+@media only screen and (max-width: 450px) {
+
+    footer {
+        .violet-box {
+            height: 70px;
+        }
+    
+        .footer-text {
+            display: flex;
+            flex-direction: column;
+            margin-left: 30px;
+            width: 300px;
+
+            .contact-box {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 20px;
+                width: 300px;
+                
+                .contact {
+                    margin-top: 20px;
+
+                    h5 {
+                        margin-bottom: 12px;
+                    }
+                }
+            }
+
+            .logo {
+                display: flex;
+                justify-content: center;
+
+                img {
+                    width: 200px;
+                }
+            }
+        }
+        
+        hr {
+            margin-top: 0px;
+        }
+     }
+}

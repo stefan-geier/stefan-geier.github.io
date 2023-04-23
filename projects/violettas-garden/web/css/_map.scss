@@ -1,0 +1,37 @@
+// Map //
+
+.product-map {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0px 100px 0px;
+    
+    svg {        
+        width: auto;
+        height: 800px;
+    }
+}
+
+// Laptop //
+
+@media only screen and (max-width: 1440px) {
+    
+    .product-map {
+        
+        svg {        
+            height: 600px;
+        }
+    }
+}
+
+// Mobile //
+
+@media only screen and (max-width: 450px) {
+
+    .product-map {
+        
+        svg {        
+            width: auto;
+            height: 400px;
+        }
+    }
+}
