@@ -1,0 +1,121 @@
+// Footer //
+
+footer {
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 60px;
+    margin-bottom: 10px;
+
+    .line-1 {
+        width: 1200px;
+        border: 1px solid #01161E;
+        margin-bottom: 40px;
+    }
+
+    .line-2 {
+        width: 1155px;
+        border: 1px solid #01161E;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .inner-footer {
+        display: flex;
+        justify-content: space-between;
+
+        .contact-footer {
+            display: flex;
+
+            .contact {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                margin-right: 50px;
+
+                a {
+                    font-family: 'Inter';
+                    text-decoration: none;
+                    color: $secondarycolor;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 25px;
+                    transition: all 0.3s ease-in-out;
+                }
+    
+                a:hover {
+                    color: $primarycolor;
+                }
+            }
+
+            .social {
+
+                img {
+                    width: 20px;
+                    height: 20px;
+                    margin-right: 20px;
+                }
+            }
+        }
+
+        .logo-footer {
+            width: 260px;
+        }
+    }
+
+    .back-to-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .back-to-top_button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 30px;
+            height: 30px;
+            background-color: $secondarycolor;
+
+            img {
+                width: 24px;
+                height: 24px;  
+            }
+        }
+    }
+
+    .footer-privacy-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 10px;
+
+        .privacy-section {
+            display: flex;
+            column-gap: 20px;
+
+            a {
+                font-family: 'Inter';
+                text-decoration: none;
+                color: $secondarycolor;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 17px;
+                transition: all 0.3s ease-in-out;
+            }
+    
+            a:hover {
+                color: $primarycolor;
+            }
+        }
+
+        p {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 15px;
+            color: $secondarycolor;
+        }
+    }
+}
+
+// -------------- //

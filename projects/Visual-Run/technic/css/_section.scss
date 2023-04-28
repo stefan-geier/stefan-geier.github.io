@@ -1,0 +1,31 @@
+// Section //
+
+.section {
+    max-width: 1380px;
+    width: 95%;
+    height: 100vh;
+    background-color: $secondarycolor;
+    background-image: url(../../assets/Img/lines-bg-1.png);
+    background-size: cover;
+    margin: 0 auto;
+    background-attachment: fixed;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    img {
+        width: 680px;
+    }
+
+    div {
+        margin-right: 50px;
+        width: 500px;
+
+        p {
+            margin-top: 20px;
+            color: $white;
+        }
+    }
+}

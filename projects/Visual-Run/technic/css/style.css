@@ -1,0 +1,368 @@
+header {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header nav {
+  z-index: 1;
+  position: fixed;
+  top: 0px;
+  background-color: #01161E;
+  height: 80px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  transition: top 0.4s;
+}
+header nav .menu-bar {
+  width: 1200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+header nav .menu-bar .logo-nav {
+  height: 30px;
+}
+header nav .menu-bar div {
+  display: flex;
+  flex-direction: row;
+}
+header nav .menu-bar div .menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+header nav .menu-bar div .menu ul {
+  display: flex;
+  -moz-column-gap: 24px;
+       column-gap: 24px;
+  margin-left: 40px;
+}
+header nav .menu-bar div .menu ul li {
+  list-style-type: none;
+}
+header nav .menu-bar div .menu ul li a {
+  text-decoration: none;
+  color: white;
+  letter-spacing: 1.5px;
+  font-size: 18px;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+header nav .menu-bar div .menu ul li a:hover {
+  color: #087F8C;
+}
+header nav .menu-bar div .menu ul li .selected {
+  color: #087F8C;
+}
+header nav .menu-bar div .language {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+header nav .menu-bar div .language ul {
+  display: flex;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
+  margin-left: 40px;
+}
+header nav .menu-bar div .language ul .line {
+  border-left: 1.2px solid white;
+  padding-left: 5px;
+}
+header nav .menu-bar div .language ul li {
+  height: 18px;
+  line-height: 18px;
+  list-style-type: none;
+}
+header nav .menu-bar div .language ul li a {
+  text-decoration: none;
+  color: white;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+header nav .menu-bar div .language ul li a:hover {
+  color: #087F8C;
+}
+header .above-the-fold {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80px;
+}
+header .above-the-fold .logo-header {
+  width: 730px;
+  margin-bottom: 35px;
+}
+
+a.button-primary {
+  background-color: #01161E;
+  color: white;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  padding: 14px 14px;
+  margin-top: 50px;
+  text-decoration: none;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+a.button-primary:hover {
+  background-color: #087F8C;
+}
+
+a.button-secondary {
+  display: inline-block;
+  background-color: #087F8C;
+  color: white;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  padding: 14px 14px;
+  margin-top: 50px;
+  text-decoration: none;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+a.button-secondary:hover {
+  background-color: white;
+  color: #087F8C;
+}
+
+.section {
+  max-width: 1380px;
+  width: 95%;
+  height: 100vh;
+  background-color: #01161E;
+  background-image: url(../../assets/Img/lines-bg-1.png);
+  background-size: cover;
+  margin: 0 auto;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.section img {
+  width: 680px;
+}
+.section div {
+  margin-right: 50px;
+  width: 500px;
+}
+.section div p {
+  margin-top: 20px;
+  color: white;
+}
+
+footer {
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: 60px;
+  margin-bottom: 10px;
+}
+footer .line-1 {
+  width: 1200px;
+  border: 1px solid #01161E;
+  margin-bottom: 40px;
+}
+footer .line-2 {
+  width: 1155px;
+  border: 1px solid #01161E;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+footer .inner-footer {
+  display: flex;
+  justify-content: space-between;
+}
+footer .inner-footer .contact-footer {
+  display: flex;
+}
+footer .inner-footer .contact-footer .contact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: 50px;
+}
+footer .inner-footer .contact-footer .contact a {
+  font-family: "Inter";
+  text-decoration: none;
+  color: #01161E;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+  transition: all 0.3s ease-in-out;
+}
+footer .inner-footer .contact-footer .contact a:hover {
+  color: #087F8C;
+}
+footer .inner-footer .contact-footer .social img {
+  width: 20px;
+  height: 20px;
+  margin-right: 20px;
+}
+footer .inner-footer .logo-footer {
+  width: 260px;
+}
+footer .back-to-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .back-to-top .back-to-top_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  background-color: #01161E;
+}
+footer .back-to-top .back-to-top_button img {
+  width: 24px;
+  height: 24px;
+}
+footer .footer-privacy-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 10px;
+}
+footer .footer-privacy-section .privacy-section {
+  display: flex;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+footer .footer-privacy-section .privacy-section a {
+  font-family: "Inter";
+  text-decoration: none;
+  color: #01161E;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  transition: all 0.3s ease-in-out;
+}
+footer .footer-privacy-section .privacy-section a:hover {
+  color: #087F8C;
+}
+footer .footer-privacy-section p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #01161E;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-family: "Raleway", sans-serif;
+}
+
+.container {
+  width: 1400px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: "Raleway";
+  font-size: 60px;
+  font-weight: 300;
+  line-height: 70px;
+  text-align: center;
+}
+
+h2 {
+  font-family: "Raleway";
+  color: white;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 47px;
+}
+
+h3 {
+  font-family: "Raleway";
+  color: #01161E;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  margin-bottom: 15px;
+}
+
+p {
+  font-family: "Inter";
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 150%;
+}
+
+a {
+  font-family: "Raleway";
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.contact-section {
+  padding-top: 240px;
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.contact-section h2 {
+  color: #01161E;
+}
+.contact-section .contact-links {
+  display: flex;
+  align-items: center;
+}
+.contact-section .contact-links .mail {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.contact-section .contact-links .mail a {
+  font-family: "Inter";
+  text-decoration: none;
+  color: #01161E;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-left: 10px;
+  transition: all 0.3s ease-in-out;
+}
+.contact-section .contact-links .mail a:hover {
+  color: #087F8C;
+}
+.contact-section .contact-links .phone {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-left: 140px;
+}
+.contact-section .contact-links .phone a {
+  font-family: "Inter";
+  text-decoration: none;
+  color: #01161E;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-left: 10px;
+  transition: all 0.3s ease-in-out;
+}
+.contact-section .contact-links .phone a:hover {
+  color: #087F8C;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,141 @@
+// Imported Files //
+
+@import "./variables";
+@import "./header";
+@import "./button";
+@import "./section";
+@import "./footer";
+
+// -------------- //
+
+
+
+// -------------- CSS Classes -------------- //
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-family: 'Raleway', sans-serif;
+}
+
+.container {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+// Text Style //
+
+h1 {
+    font-family: 'Raleway';
+    font-size: 60px;
+    font-weight: 300;
+    line-height: 70px;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Raleway';
+    color: $white;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 47px;
+}
+
+h3 {
+    font-family: 'Raleway';
+    color: $secondarycolor;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    margin-bottom: 15px;
+}
+
+p {
+    font-family: 'Inter';
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 150%;
+}
+
+a {
+    font-family: 'Raleway';
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+}
+
+// CSS Style //
+
+
+// Concat Section //
+
+.contact-section {
+    padding-top: 240px;
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    
+
+    h2 {
+        color: $secondarycolor;
+    }
+
+    .contact-links {
+        display: flex;
+        align-items: center;
+
+        .mail {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+
+            a {
+                font-family: 'Inter';
+                text-decoration: none;
+                color: $secondarycolor;
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 24px;
+                margin-left: 10px;
+                transition: all 0.3s ease-in-out;
+            }
+
+            a:hover {
+                color: $primarycolor;
+            }
+        }
+
+        .phone {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-left: 140px;
+
+            a {
+                font-family: 'Inter';
+                text-decoration: none;
+                color: $secondarycolor;
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 24px;
+                margin-left: 10px;
+                transition: all 0.3s ease-in-out;
+            }
+
+            a:hover {
+                color: $primarycolor;
+            }
+        }
+    }
+}

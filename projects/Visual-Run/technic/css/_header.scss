@@ -1,0 +1,119 @@
+// Header //
+
+header {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    nav {
+        z-index: 1;
+        position: fixed;
+        top: 0px;
+        background-color: $secondarycolor;
+        height: 80px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        transition: top 0.4s;
+
+        .menu-bar {
+            width: 1200px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .logo-nav {
+                height: 30px;
+            }
+
+            div {
+                display: flex;
+                flex-direction: row;
+            
+                .menu {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+    
+                    ul {
+                        display: flex;
+                        column-gap: 24px;
+                        margin-left: 40px;
+    
+                        li {
+                            list-style-type: none;
+    
+                            a {
+                                text-decoration: none;
+                                color: $white;
+                                letter-spacing: 1.5px;
+                                font-size: 18px;
+                                font-weight: 600;
+                                transition: all 0.3s ease-in-out;
+                                cursor: pointer;
+                            }
+
+                            a:hover {
+                                color: $primarycolor;
+                            }
+
+                            .selected {
+                                color: $primarycolor;
+                            }
+                        }
+                    }
+                }
+    
+                .language {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+    
+                    ul {
+                        display: flex;
+                        column-gap: 5px;
+                        margin-left: 40px;
+                        
+                        .line {
+                            border-left: 1.2px solid $white;
+                            padding-left: 5px;
+                        }
+
+                        li {
+                            height: 18px;
+                            line-height: 18px;
+                            list-style-type: none;
+
+                            a {
+                                text-decoration: none;
+                                color: $white;
+                                transition: all 0.3s ease-in-out;
+                                cursor: pointer;
+                            }
+
+                            a:hover {
+                                color: $primarycolor;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+
+    .above-the-fold {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 80px;
+
+        .logo-header {
+            width: 730px;
+            margin-bottom: 35px;
+        }
+    }
+}
