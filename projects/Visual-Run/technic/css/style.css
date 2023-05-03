@@ -1,5 +1,9 @@
-header {
+.index-header {
   height: 100vh;
+}
+
+header {
+  height: 65vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -94,8 +98,51 @@ header .above-the-fold {
   padding-top: 80px;
 }
 header .above-the-fold .logo-header {
-  width: 730px;
+  width: 750px;
   margin-bottom: 35px;
+}
+header .above-the-fold .contact-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 40px;
+}
+header .above-the-fold .contact-links .mail {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+header .above-the-fold .contact-links .mail a {
+  font-family: "Inter";
+  text-decoration: none;
+  color: #01161E;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-left: 10px;
+  transition: all 0.3s ease-in-out;
+}
+header .above-the-fold .contact-links .mail a:hover {
+  color: #087F8C;
+}
+header .above-the-fold .contact-links .phone {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 20px;
+}
+header .above-the-fold .contact-links .phone a {
+  font-family: "Inter";
+  text-decoration: none;
+  color: #01161E;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-left: 10px;
+  transition: all 0.3s ease-in-out;
+}
+header .above-the-fold .contact-links .phone a:hover {
+  color: #087F8C;
 }
 
 a.button-primary {
@@ -168,7 +215,8 @@ footer .line-1 {
   margin-bottom: 40px;
 }
 footer .line-2 {
-  width: 1155px;
+  width: 100%;
+  max-width: 1155px;
   border: 1px solid #01161E;
   margin-top: 40px;
   margin-bottom: 40px;
@@ -277,6 +325,14 @@ body {
 }
 
 h1 {
+  font-family: "Raleway";
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 70px;
+  text-align: center;
+}
+
+h1.index-h1 {
   font-family: "Raleway";
   font-size: 60px;
   font-weight: 300;

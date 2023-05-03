@@ -1,7 +1,11 @@
 // Header //
 
-header {
+.index-header {
     height: 100vh;
+}
+
+header {
+    height: 65vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -112,8 +116,60 @@ header {
         padding-top: 80px;
 
         .logo-header {
-            width: 730px;
+            width: 750px;
             margin-bottom: 35px;
+        }
+
+        //-- Contact Section --//
+
+        .contact-links {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-top: 40px;
+    
+            .mail {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+    
+                a {
+                    font-family: 'Inter';
+                    text-decoration: none;
+                    color: $secondarycolor;
+                    font-size: 20px;
+                    font-weight: 400;
+                    line-height: 24px;
+                    margin-left: 10px;
+                    transition: all 0.3s ease-in-out;
+                }
+    
+                a:hover {
+                    color: $primarycolor;
+                }
+            }
+    
+            .phone {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                margin-top: 20px;
+    
+                a {
+                    font-family: 'Inter';
+                    text-decoration: none;
+                    color: $secondarycolor;
+                    font-size: 20px;
+                    font-weight: 400;
+                    line-height: 24px;
+                    margin-left: 10px;
+                    transition: all 0.3s ease-in-out;
+                }
+    
+                a:hover {
+                    color: $primarycolor;
+                }
+            }
         }
     }
 }
